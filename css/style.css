@@ -162,6 +162,8 @@
   color: white;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  font-family: 'Cute Font', cursive;
+  font-size: 30px;
 }
 
 #quote span:first-child {
