@@ -1,0 +1,149 @@
+.black {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  z-index: -1;
+  background-color: black;
+}
+#bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+#clock {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 120px;
+  color: white;
+  font-family: 'Cute Font', cursive;
+}
+
+#login-form {
+  text-align: center;
+  margin: 50px auto;
+  &.hidden {
+    display: none;
+  }
+  input:first-child {
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 200px;
+    border: none;
+  }
+  input:first-child:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: .4s;
+  }
+  input:first-child:focus {
+    outline: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    background-color: inherit;
+    transition: .4s;
+    color: white;
+  }
+  input:last-child {
+    width: 60px;
+    height: 30px;
+    border-radius: 60px;
+    border: none;
+  }
+  input:last-child:hover {
+    color: white;
+    background-color: inherit;
+    border-radius: 0;
+    border-bottom: 1px solid white;
+    transition: all .4s;
+  }
+}
+#greeting {
+  text-align: center;
+  color: white;
+  font-family: 'Cute Font', cursive;
+  font-size: 50px;
+  &.hidden {
+    display: none;
+  }
+}
+#todo-form {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  input {
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 200px;
+    border: none;
+  }
+  input:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: .4s;
+  }
+  input:focus {
+    outline: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    background-color: inherit;
+    transition: .4s;
+    color: white;
+  }
+}
+#todo-list {
+  width: 300px;
+  height: 300px;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  span {
+    display:inline-block;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Cute Font', cursive;
+    font-size: 26px;
+  }
+  button {
+    border: none;
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    padding-left: 20px;
+    font-family: 'Cute Font', cursive;
+  }
+}
+#quote {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  color: white;
+  transform: translate(-50%);
+  span:first-child {
+    margin-bottom: 10px;
+  }
+    span {
+      display: block;
+      text-align: center;   
+    }
+}
+#weather {
+  color: white;
+  font-family: 'Cute Font', cursive;
+  font-size: 28px;
+  position: fixed;
+  top: 7%;
+  right: 29%;
+}
